@@ -6,7 +6,7 @@
     <description>Builds, tests, and runs the project org.apache.netbeans.localize.de.</description>
     <import file="nbproject/build-impl.xml"/>
     
-    <target name="build" depends="build-language-jars,netbeans,test-build"/>
+    <target name="build" depends="build-language-jars,projectized-common.build"/>
     
     <target name="build-language-jars">
         <!--        <taskdef name="jhindexer"
@@ -31,7 +31,7 @@
      
         <taskdef name="package-build" classname="org.netbeans.l10n.Package">
             <classpath>
-                <pathelement path="l10nantext11.jar"/>
+                <pathelement path="l10nantext.jar"/>
                 <!--<pathelement path="nbantext.jar"/>-->
             </classpath>
         </taskdef>
